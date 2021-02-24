@@ -1,0 +1,74 @@
+[
+ {
+   "id": 1,
+   "title": "Covid 19 Tracker",
+   "description": "Covid-19 Updates/Tracker App created with React Js and Material UI",
+   "tags": "Covid-19,Updates/Tracker,App,created,with,React,Js,and,Material,UI",
+   "image": "/project_1.jpg",
+   "github_link": "https://github.com/anasshad/Covid19Updates",
+   "deploy_link": "http://covid19latestupdates.surge.sh/"
+ },
+ {
+   "id": 2,
+   "title": "Macro Compliant Tracker",
+   "description": "Macro Compliant Tracker with Nextjs and MongoDB",
+   "tags": "Macro,Compliant,Tracker,with,Nextjs,and,MongoDB",
+   "image": "/project_2.jpg",
+   "github_link": "https://github.com/anasshad/macro-compliant-tracker",
+   "deploy_link": "https://macro-compliant-tracker.vercel.app"
+ },
+ {
+   "id": 3,
+   "title": "Virtual Lolly",
+   "description": "Virtual Lolly using Gatsby, Netlify, FaunaDB",
+   "tags": "Virtual,Lolly,using,Gatsby,,Netlify,,FaunaDB",
+   "image": "/project_3.jpg",
+   "github_link": "https://github.com/anasshad/Virtual-Lolly-using-Gatsby-Netlify-FaunaDB",
+   "deploy_link": "https://virtual-lolly-anasshad.netlify.app/"
+ },
+ {
+   "id": 4,
+   "title": "Serverless JamStack TodoApp",
+   "description": "Serverless JAMStack Todo app with Netlify, Gatsby, GraphQL, and FaunaDB",
+   "tags": "Serverless,JAMStack,Todo,app,with,Netlify,,Gatsby,,GraphQL,,and,FaunaDB",
+   "image": "/project_4.png",
+   "github_link": "https://github.com/anasshad/Serverless-JamStack-TodoApp",
+   "deploy_link": ""
+ },
+ {
+   "id": 5,
+   "title": "React Formik Materialui Step Form",
+   "description": "Signup Form and Multi-Step Form with Formik, Yup, and Material UI using TypeScript",
+   "tags": "Signup,Form,and,Multi-Step,Form,with,Formik,,Yup,,and,Material,UI,using,TypeScript",
+   "image": "/project_5.jpg",
+   "github_link": "https://github.com/anasshad/react-formik-materialui-step-form",
+   "deploy_link": "http://formikmultistageform.surge.sh/"
+ },
+ {
+   "id": 6,
+   "title": "React Spacex PWA",
+   "description": "Space X Client Application with React, TypeScript, Appllo Client 3, and SpaceX API using Test-Driven Development (TDD) and deployed as a PWA",
+   "tags": "Space,X,Client,Application,with,React,,TypeScript,,Appllo,Client,3,,and,SpaceX,API,using,Test-Driven,Development,(TDD),and,deployed,as,a,PWA",
+   "image": "/project_6.jpg",
+   "github_link": "https://github.com/anasshad/react-spacex-pwa",
+   "deploy_link": "https://react-spacex-pwa.netlify.app/"
+ },
+ {
+   "id": 7,
+   "title": "Bookmark App",
+   "description": "Bookmarking Application With FaunaDB, Netlify And Gatsby",
+   "tags": "Bookmarking,Application,With,FaunaDB,,Netlify,And,Gatsby",
+   "image": "/project_7.jpg",
+   "github_link": "https://github.com/anasshad/Bookmarking-Application-With-FaunaDB-Netlify-And-Gatsby",
+   "deploy_link": "https://affectionate-hamilton-163bff.netlify.app/"
+ },
+ {
+   "id": 8,
+   "title": "Strapi NextJs Blog",
+   "description": "Fullstack Blog application with Strapi and Next.js",
+   "tags": "Fullstack,Blog,application,with,Strapi,and,Next.js",
+   "image": "/project_8.jpeg",
+   "github_link": "https://github.com/anasshad/Strapi-NextJs-Fullstack-Blog",
+   "deploy_link": ""
+ }
+]

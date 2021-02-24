@@ -5,7 +5,7 @@ import Intro from "./Intro/index";
 
 export default function Main() {
   return (
-    <div className="h-screen grid grid-cols-3 gap-6 p-10">
+    <div className="h-screen grid grid-cols-3 gap-6 p-10 py-20">
       <div className="flex flex-wrap content-center">
         <Photo />
       </div>
