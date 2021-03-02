@@ -6,10 +6,16 @@ import Languages from "./Languages";
 import TechnologiesUsed from "./Technologies";
 
 export default function Technologies() {
-  const [pageYOffset, setPageYOffset] = useState(0);
+  const [showGauges, setShowGauges] = useState(false);
 
   useEffect(() => {
-    setPageYOffset(window.pageYOffset);
+    window.onscroll = function () {
+      if (window.pageYOffset >= 764) {
+        setShowGauges(true);
+      } else {
+        setShowGauges(false);
+      }
+    };
   }, []);
 
   return (
@@ -20,7 +26,7 @@ export default function Technologies() {
             Languages I use
           </h2>
           <br />
-          {pageYOffset >= 764 && (
+          {showGauges && (
             <div className="flex flex-wrap space-x-4 md:space-x-8 justify-center">
               <Languages
                 label="Javascript"
