@@ -9,13 +9,14 @@ export default function Main() {
       <div className="flex flex-wrap content-center mx-auto w-3/4 sm:w-full">
         <Photo />
       </div>
-      <div className="col-span-2 flex flex-wrap content-center justify-center">
+      <div className="col-span-2 flex flex-wrap content-center justify-center sm:justify-start">
         <Intro />
       </div>
       <div style={{ zIndex: "-1" }}>
         <Image
           alt="Tech Background"
-          src="/grid_bg.png"
+          // src="/grid_bg.png"
+          src="/bg_city.jpg"
           layout="fill"
           objectFit="cover"
           quality={100}

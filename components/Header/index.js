@@ -4,18 +4,10 @@ import Scrollspy from "react-scrollspy";
 import styles from "./styles.module.css";
 
 export default function Header() {
-  const [showAvatar, setShowAvatar] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  const [section, setSection] = useState("main");
 
   useEffect(() => {
-    window.onscroll = function () {
-      if (window.pageYOffset >= 400) {
-        setShowAvatar(true);
-      } else {
-        setShowAvatar(false);
-      }
-    };
-
     function handleResize() {
       if (window.innerWidth < 640) setOpenMenu(false);
       else setOpenMenu(true);
@@ -29,36 +21,43 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="flex justify-between fixed top-0 w-full px-5 py-2 bg-gray-700 text-white text-center z-10 shadow-lg">
+    <div className="text-xs flex justify-between fixed top-0 w-full px-5 py-2 text-gray-200 bg-gray-700 bg-opacity-40 text-center z-10 shadow-lg">
       <div className="flex content-center gap-5">
-        {showAvatar && (
+        {section !== "main" && (
           <Image
             src="/selfimage.gif"
             className="rounded-full"
+            layout="fixed"
             height="42"
             width="42"
           />
         )}
-        <h1 style={{ lineHeight: "42px" }}>Anas Shad</h1>
+        <h1 className="text-xs" style={{ lineHeight: "42px" }}>
+          Anas Shad
+        </h1>
       </div>
       <div className="w-3/4 md:w-1/2">
         <button
           onClick={() => setOpenMenu(!openMenu)}
-          className="sm:hidden leading-10 w-full flex justify-end"
+          className="sm:hidden leading-10 w-full flex justify-end outline-none"
         >
-          Open
+          {openMenu === false ? (
+            <Image
+              src="/square.svg"
+              height="30"
+              width="30"
+              layout="fixed"
+              className={styles.hamburger_icon}
+            />
+          ) : (
+            <div className="uppercase text-white px-2 rounded-sm ">X</div>
+          )}
         </button>
         <Scrollspy
           items={["main", "profile", "technologies", "projects", "contact"]}
-          currentClassName="bg-blue-400 px-2 rounded-sm"
-          // style={{
-          //   display: "flex",
-          //   flexWrap: "nowrap",
-          //   width: "100%",
-          //   justifyContent: "space-between",
-          //   lineHeight: "42px",
-          // }}
-          className={`flex flex-col justify-between leading-10 sm:flex-row flex-nowrap ${
+          currentClassName="border-b-2"
+          onUpdate={(d) => setSection(d.id)}
+          className={`flex flex-col justify-between leading-10 sm:flex-row flex-nowrap uppercase text-sm ${
             !openMenu && "hidden"
           }`}
         >

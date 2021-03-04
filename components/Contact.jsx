@@ -1,5 +1,5 @@
 const buttonClass =
-  "flex flex-row items-center gap-2 sm:gap-5 border-2 px-7 py-2 rounded-3xl";
+  "flex flex-row items-center gap-2 sm:gap-5 border border-gray-700 shadow-lg px-7 py-2 rounded-3xl";
 
 export default function Contact() {
   return (

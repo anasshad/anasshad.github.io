@@ -1,7 +1,17 @@
-.scrollspy {
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* .scrollspy {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
   line-height: 42px;
+} */
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.hamburger_icon {
+  filter: invert(100%);
 }

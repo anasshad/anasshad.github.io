@@ -4,7 +4,7 @@ export default function Photo() {
   return (
     <div>
       <Image
-        className="rounded-full"
+        className="rounded-full shadow-2xl"
         src="/selfimage.gif"
         alt="photo"
         width="500"
