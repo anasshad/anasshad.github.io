@@ -1,9 +1,9 @@
 const buttonClass =
-  "flex flex-row items-center gap-2 sm:gap-5 border border-gray-700 shadow-lg px-7 py-2 rounded-3xl";
+  "flex flex-row items-center gap-2 sm:gap-5 border border-gray-700 shadow-lg px-7 py-2 rounded-3xl hover:bg-gray-700";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col h-full bg-gray-800 p-10 text-white justify-center gap-5">
+    <div className="flex flex-col h-full bg-gray-800 p-10 text-gray-300 justify-center gap-5">
       <h1 className="text-2xl text-center">Contact</h1>
       <div className="flex flex-wrap justify-evenly">
         <a href="" className={buttonClass}>
